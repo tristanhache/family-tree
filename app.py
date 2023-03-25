@@ -7,7 +7,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-
 @app.route("/ma-deuxieme-page")
 def page2():
-    return render_template("page-2.html")  
+    return render_template("page-2.html")
+
+@app.route("/password")
+def page2():
+    return render_template("password.html") 
