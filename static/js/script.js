@@ -1,9 +1,15 @@
-function sendMail() {
-    var link = "mailto:tristanhache2009@gmail.com"
-    + "?cc=myCCtristanhache2009@gmail.com"
-    + "&subject=" + escape("Family Tree - Answer Form - Home")
-    + "&body=" + escape(document.getElementById('Body').value)
-;
-
-window.location.href = link;
-}
+$('form').submit( function ()
+{
+    if( $('input[name=login]').val() == 'username' && $('input[name=password]').val() == 'password' )
+    {
+        alert('You are logged in!');
+        window.location.href="sample.html";
+    }
+              
+    else
+    {
+        alert('Wrong username or password!');
+    }
+        
+    return false;
+});
