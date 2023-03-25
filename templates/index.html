@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/app-logo.png') }}">
+    <title>Movies And Series</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="https://kit.fontawesome.com/feeefe9188.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/xyo4hwt.css">
+</head>
+<style>
+    body {
+        font-family: "carbon", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+    
+    .navbar {
+      width: 100%;
+      background-color: #21852b;
+      overflow: auto;
+    }
+    
+    .navbar a {
+      float: left;
+      padding: 12px;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .navbar a:hover {
+      background-color: #0d4408;
+    }
+    
+    .active {
+      background-color: #156126;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+      }
+    }
+    </style>
+<body>
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+        <a href="#"><i class="fa-solid fa-phone"></i> Contact</a>
+        <a href="#"><i class="fa-solid fa-user"></i> Login</a>
+      </div>
+</body>
+</html>
