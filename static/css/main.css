@@ -1,33 +1,129 @@
-body {
-    margin: 0;
-    padding: 0;
-  }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+/* Basic Styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+h1, h2 {
+	margin: 30px 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 10px auto;
+}
+
+/* Navigation Styles */
 nav {
-    background-color: #333;
-    height: 50px;
+  background-color: #333;
   }
   
   nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
   }
   
-  nav ul li {
-    margin: 0 10px;
+  nav li {
+  margin: 0 20px;
   }
   
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
+  nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
   }
   
-  nav ul li a:hover {
-    background-color: #555;
+  nav a:hover {
+  background-color: #fff;
+  color: #333;
+  }
+  
+  /* Gallery Styles */
+  .photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  }
+  
+  .photo-gallery img {
+  border: 5px solid #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  }
+  
+  .photo-gallery img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Contact Form Styles */
+  form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  label {
+  margin-top: 10px;
+  }
+  
+  input,
+  textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+  outline: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+  }
+  
+  /* Footer Styles */
+  footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
   }
