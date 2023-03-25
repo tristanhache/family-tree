@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/app-logo.png') }}">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/family-men.png') }}">
     <title>Family Tree - Haché & Leduc</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <script src="https://kit.fontawesome.com/feeefe9188.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/xyo4hwt.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <h1>Arbre Généalogique Haché & Leduc</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Galerie</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="welcome">
+      <h2>Bienvenue sur l'arbre Généalogique de Haché et Leduc!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut velit quis velit vestibulum placerat ut vitae quam. Pellentesque in augue at lorem ultricies ullamcorper eu vitae enim.</p>
+    </section>
+    <section id="gallery">
+      <h2>Galerie Photo!</h2>
+      <div class="photo-gallery">
+        <img src="{{ url_for('static', filename='images/#') }}" alt="Photo de famille 1">
+        <img src="{{ url_for('static', filename='images/#') }}" alt="Photo de famille 2">
+        <img src="{{ url_for('static', filename='images/#') }}" alt="Photo de famille 3">
+        <img src="{{ url_for('static', filename='images/#') }}" alt="Photo de famille 4">
+        <img src="{{ url_for('static', filename='images/#') }}" alt="Photo de famille 5">
+        <img src="{{ url_for('static', filename='images/#') }}" alt="Photo de famille 6">
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contactez-moi</h2>
+      <p>Vous pouvez me contactez si vous avez plus d'informations sur la famille des Haché ou des Leduc!</p>
+      <form>
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <input onclick="sendMail();" type="submit" value="Envoyer">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Tristan Industries - All rights reserved.</p>
+  </footer>
 </body>
 </html>
