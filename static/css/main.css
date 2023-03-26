@@ -78,12 +78,13 @@ nav {
   text-decoration: none;
   padding: 10px;
   transition: all 0.3s ease;
+  border-radius: 10px;
   }
   
   nav a:hover {
   background-color: #fff;
   color: #333;
-  border-radius: 20px;
+  border-radius: 10px;
   }
   
   /* Gallery Styles */
