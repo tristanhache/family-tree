@@ -86,6 +86,12 @@ nav {
   color: #333;
   border-radius: 10px;
   }
+
+  .active {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+  }
   
   /* Gallery Styles */
   .photo-gallery {
