@@ -45,7 +45,7 @@
   transition: all 0.3s ease-out;
 }
 .button:hover {
-  background: #06D85F;
+  background: #0f0f0f;
 }
 .overlay {
   position: fixed;
@@ -64,7 +64,6 @@
 }
 
 .popup {
-  height: 652px;
   width: 369px;
   margin: 70px auto;
   background: #fff;
