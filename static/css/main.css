@@ -64,6 +64,8 @@
 }
 
 .popup {
+  height: 652px;
+  width: 369px;
   margin: 70px auto;
   background: #fff;
   border-radius: 5px;
@@ -71,7 +73,7 @@
   transition: all 5s ease-in-out;
 }
 
-tristan-popup {
+.tristan-popup-img {
   height: 652px;
   width: 369px;
 }
