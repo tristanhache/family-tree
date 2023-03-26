@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/family-men.png') }}" type="image/png"> 
+    <title>Galerie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="https://kit.fontawesome.com/feeefe9188.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/xyo4hwt.css">
+    <script src="{{ url_for('static', filename='js/script.js') }}" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="story.html">Histoire</a></li>
+                <li><a class="active" href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Galerie</h1>
+
+        <section class="gallery">
+            <div class="item">
+                <img src="images/gallery-1.jpg" alt="Photo 1">
+                <h3>Titre de la photo 1</h3>
+                <p>Description de la photo 1.</p>
+            </div>
+            <div class="item">
+                <img src="images/gallery-2.jpg" alt="Photo 2">
+                <h3>Titre de la photo 2</h3>
+                <p>Description de la photo 2.</p>
+            </div>
+            <div class="item">
+                <img src="images/gallery-3.jpg" alt="Photo 3">
+                <h3>Titre de la photo 3</h3>
+                <p>Description de la photo 3.</p>
+            </div>
+            <div class="item">
+                <img src="images/gallery-4.jpg" alt="Photo 4">
+                <h3>Titre de la photo 4</h3>
+                <p>Description de la photo 4.</p>
+            </div>
+            <div class="item">
+                <img src="images/gallery-5.jpg" alt="Photo 5">
+                <h3>Titre de la photo 5</h3>
+                <p>Description de la photo 5.</p>
+            </div>
+            <div class="item">
+                <img src="images/gallery-6.jpg" alt="Photo 6">
+                <h3>Titre de la photo 6</h3>
+                <p>Description de la photo 6.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tristan Industries - All rights reserved.</p>
+      </footer>
+    </body>
+    </html>
