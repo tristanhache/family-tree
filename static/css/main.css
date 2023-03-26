@@ -64,6 +64,8 @@
 }
 
 .popup {
+  height: 652px;
+  width: 369px;
   margin: 70px auto;
   padding: 20px;
   background: #fff;
