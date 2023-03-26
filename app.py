@@ -11,6 +11,11 @@ def index():
 def page2():
     return render_template("page-2.html")
 
-@app.route("/password")
-def password():
-    return render_template("password.html")
+@app.route("/story")
+def story():
+    return render_template("story.html")
+
+@app.route("/galerie")
+def galerie():
+    return render_template("galerie.html")
+
