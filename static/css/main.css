@@ -37,6 +37,8 @@ img {
 /* Navigation Styles */
 nav {
   background-color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
   }
   
   nav ul {
@@ -52,7 +54,7 @@ nav {
   nav a {
   color: #fff;
   text-decoration: none;
-  padding: 30px;
+  padding: 10px;
   transition: all 0.3s ease;
   }
   
