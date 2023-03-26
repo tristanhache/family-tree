@@ -10,3 +10,7 @@ def index():
 @app.route("/ma-deuxieme-page")
 def page2():
     return render_template("page-2.html")
+
+@app.route("/password")
+def password():
+    return render_template("password.html")
